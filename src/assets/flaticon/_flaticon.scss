@@ -1,0 +1,112 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 11/09/2020 19:34
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-casa:before { content: "\f100"; }
+.flaticon-ubicacion:before { content: "\f101"; }
+.flaticon-internacional:before { content: "\f102"; }
+.flaticon-a:before { content: "\f103"; }
+.flaticon-contactos:before { content: "\f104"; }
+.flaticon-informacion:before { content: "\f105"; }
+.flaticon-correo:before { content: "\f106"; }
+.flaticon-llamada-telefonica:before { content: "\f107"; }
+.flaticon-gorjeo:before { content: "\f108"; }
+.flaticon-gorjeo-1:before { content: "\f109"; }
+.flaticon-facebook:before { content: "\f10a"; }
+.flaticon-gorjeo-2:before { content: "\f10b"; }
+.flaticon-linkedin:before { content: "\f10c"; }
+.flaticon-instagram:before { content: "\f10d"; }
+.flaticon-lupa:before { content: "\f10e"; }
+.flaticon-usuario:before { content: "\f10f"; }
+.flaticon-ayudar:before { content: "\f110"; }
+.flaticon-usuario-1:before { content: "\f111"; }
+.flaticon-calendario:before { content: "\f112"; }
+.flaticon-reunion:before { content: "\f113"; }
+.flaticon-alarma:before { content: "\f114"; }
+.flaticon-estrella:before { content: "\f115"; }
+.flaticon-estrella-1:before { content: "\f116"; }
+.flaticon-parrilla:before { content: "\f117"; }
+.flaticon-eliminar:before { content: "\f118"; }
+.flaticon-cerrar-sesion:before { content: "\f119"; }
+.flaticon-cerrar-sesion-1:before { content: "\f11a"; }
+.flaticon-compartir:before { content: "\f11b"; }
+.flaticon-caja-fuerte:before { content: "\f11c"; }
+.flaticon-ciego:before { content: "\f11d"; }
+.flaticon-ajustes:before { content: "\f11e"; }
+.flaticon-perfil:before { content: "\f11f"; }
+.flaticon-expediente:before { content: "\f120"; }
+.flaticon-logro:before { content: "\f121"; }
+.flaticon-certificado:before { content: "\f122"; }
+.flaticon-videollamada:before { content: "\f123"; }
+    
+    $font-Flaticon-casa: "\f100";
+    $font-Flaticon-ubicacion: "\f101";
+    $font-Flaticon-internacional: "\f102";
+    $font-Flaticon-a: "\f103";
+    $font-Flaticon-contactos: "\f104";
+    $font-Flaticon-informacion: "\f105";
+    $font-Flaticon-correo: "\f106";
+    $font-Flaticon-llamada-telefonica: "\f107";
+    $font-Flaticon-gorjeo: "\f108";
+    $font-Flaticon-gorjeo-1: "\f109";
+    $font-Flaticon-facebook: "\f10a";
+    $font-Flaticon-gorjeo-2: "\f10b";
+    $font-Flaticon-linkedin: "\f10c";
+    $font-Flaticon-instagram: "\f10d";
+    $font-Flaticon-lupa: "\f10e";
+    $font-Flaticon-usuario: "\f10f";
+    $font-Flaticon-ayudar: "\f110";
+    $font-Flaticon-usuario-1: "\f111";
+    $font-Flaticon-calendario: "\f112";
+    $font-Flaticon-reunion: "\f113";
+    $font-Flaticon-alarma: "\f114";
+    $font-Flaticon-estrella: "\f115";
+    $font-Flaticon-estrella-1: "\f116";
+    $font-Flaticon-parrilla: "\f117";
+    $font-Flaticon-eliminar: "\f118";
+    $font-Flaticon-cerrar-sesion: "\f119";
+    $font-Flaticon-cerrar-sesion-1: "\f11a";
+    $font-Flaticon-compartir: "\f11b";
+    $font-Flaticon-caja-fuerte: "\f11c";
+    $font-Flaticon-ciego: "\f11d";
+    $font-Flaticon-ajustes: "\f11e";
+    $font-Flaticon-perfil: "\f11f";
+    $font-Flaticon-expediente: "\f120";
+    $font-Flaticon-logro: "\f121";
+    $font-Flaticon-certificado: "\f122";
+    $font-Flaticon-videollamada: "\f123";

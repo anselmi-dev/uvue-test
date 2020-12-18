@@ -1,0 +1,12 @@
+.list-social {
+  padding-left: 0;
+  list-style: none;
+  li {
+    margin-right: 1rem;
+    display: inline-block;
+    * {
+      color: $white;
+      fill: $white;
+    }
+  }
+}

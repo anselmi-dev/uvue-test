@@ -1,0 +1,67 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 11/09/2020 19:34
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}
+
+.flaticon-casa:before { content: "\f100"; }
+.flaticon-ubicacion:before { content: "\f101"; }
+.flaticon-internacional:before { content: "\f102"; }
+.flaticon-a:before { content: "\f103"; }
+.flaticon-contactos:before { content: "\f104"; }
+.flaticon-informacion:before { content: "\f105"; }
+.flaticon-correo:before { content: "\f106"; }
+.flaticon-llamada-telefonica:before { content: "\f107"; }
+.flaticon-gorjeo:before { content: "\f108"; }
+.flaticon-gorjeo-1:before { content: "\f109"; }
+.flaticon-facebook:before { content: "\f10a"; }
+.flaticon-gorjeo-2:before { content: "\f10b"; }
+.flaticon-linkedin:before { content: "\f10c"; }
+.flaticon-instagram:before { content: "\f10d"; }
+.flaticon-lupa:before { content: "\f10e"; }
+.flaticon-usuario:before { content: "\f10f"; }
+.flaticon-ayudar:before { content: "\f110"; }
+.flaticon-usuario-1:before { content: "\f111"; }
+.flaticon-calendario:before { content: "\f112"; }
+.flaticon-reunion:before { content: "\f113"; }
+.flaticon-alarma:before { content: "\f114"; }
+.flaticon-estrella:before { content: "\f115"; }
+.flaticon-estrella-1:before { content: "\f116"; }
+.flaticon-parrilla:before { content: "\f117"; }
+.flaticon-eliminar:before { content: "\f118"; }
+.flaticon-cerrar-sesion:before { content: "\f119"; }
+.flaticon-cerrar-sesion-1:before { content: "\f11a"; }
+.flaticon-compartir:before { content: "\f11b"; }
+.flaticon-caja-fuerte:before { content: "\f11c"; }
+.flaticon-ciego:before { content: "\f11d"; }
+.flaticon-ajustes:before { content: "\f11e"; }
+.flaticon-perfil:before { content: "\f11f"; }
+.flaticon-expediente:before { content: "\f120"; }
+.flaticon-logro:before { content: "\f121"; }
+.flaticon-certificado:before { content: "\f122"; }
+.flaticon-videollamada:before { content: "\f123"; }

@@ -1,0 +1,53 @@
+img,
+video {
+    max-width: 100%;
+}
+html, body {
+	font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    font-size: 16px;
+}
+body {
+  background-color: $gray-100;
+}
+.parent-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // background-image: url('/assets/patterns/pattern-shapes.png');
+    background-image: url('/assets/premium.png');
+    .router-view-content {
+        flex-grow: 1;
+        padding-bottom: map-get($spacers, 3);
+        padding-top: map-get($spacers, 3);
+    }
+}
+a:hover {
+    text-decoration: none;
+}
+a,
+button {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    &,
+    &:focus,
+    &:hover {
+        outline: none;
+    }
+}
+footer {
+    // margin-top: map-get($spacers, 4);
+}
+label {
+    font-size: $label-font-size;
+    color: $gray-600;
+}
+
+input:-internal-autofill-selected {
+  background-color: #fff
+}
+.vm--container.scrollable {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+

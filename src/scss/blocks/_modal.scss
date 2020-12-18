@@ -1,0 +1,11 @@
+.vm--container.scrollable {
+	padding: 15px;
+}
+.vm--modal {
+	max-width: 100%;
+}
+.vm--container.scrollable .vm--modal {
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto;
+}

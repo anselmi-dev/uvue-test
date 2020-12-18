@@ -1,0 +1,47 @@
+.bgCONFIRMADA { background-color: $primary }
+.bgPENDIENTE { background-color: $warning }
+.bgRECHAZADA { background-color: $dark }
+.bgFINALIZADA { background-color: $success }
+
+.ablock-event {
+        display: flex;
+        // flex-wrap: wrap;
+        position: relative;
+        padding: .5rem;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+        border: 1px solid $gray-200;
+        margin-bottom: .5rem;
+        &__date {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            line-height: 1;
+            color: $white;
+            font-size: 1.5rem;
+            background-color: $gray-600;
+            border-radius: 4px;
+            padding: .5rem;
+            span {
+                font-size: 1rem;
+            }
+        }
+        &.eclass &__date{
+            background-color: $primary;
+        }
+        &__info {
+            padding-left: .5rem; 
+            padding-right: .5rem; 
+            width: 100%;    
+        }
+        &__iactions {
+            .btn {
+                border: 1px solid #3333;
+                padding: .25rem;
+            }
+            .btn:after {
+                display: none;
+            }
+        }
+    }

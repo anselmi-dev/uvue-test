@@ -1,0 +1,22 @@
+.vue-tel-input {
+  border: none !important;
+  z-index: 4;
+  position: relative;
+	input:-internal-autofill-previewed,
+	input {
+		background-color: transparent !important;
+	}
+  &.disabled {
+      background-color: #e9ecef;
+  }
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border: none;
+  box-shadow: 0 1px 3px #dc354561, 0 1px 0 #dc354563;
+}
+
+
+.vld-overlay.is-active {
+  outline: none !important;
+}

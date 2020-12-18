@@ -1,0 +1,112 @@
+$rootHeader: ".head-gig";
+
+#{$rootHeader} {
+    @extend %punku-box;
+    $dimension_photo: 114px;
+    &__photo {
+      padding-right: 0;
+      padding-left: 0;
+      width: $dimension_photo;
+      height: $dimension_photo;
+      min-width: $dimension_photo;
+      min-height: $dimension_photo;
+      border-radius: 50%;
+      background-color: $gray-200;
+      position: relative;
+      overflow: hidden;
+      img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+      .vue-avatar--wrapper {
+        background-size: cover !important;
+        background-position: center !important;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+      }
+    }
+    &__data {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: $h4-font-size;
+        line-height: 1;
+        margin-bottom: map-get($spacers, 1);
+        padding-bottom: map-get($spacers, 1);
+        border-bottom: 1px solid $gray-200;
+        display: block;
+        word-break: break-word;
+    }
+    &__actions {
+        .btn.action {
+            padding: 0
+        }
+    }
+    &__price {
+        color: $red;
+        font-size: $h2-font-size;
+        font-weight: bold;
+        .sm {
+            font-size: $h5-font-size;
+        }
+    }
+    &__mpremiun {
+        text-align: center;
+        width: 100%;
+        font-size: $h8-font-size;
+        &:before {
+            content: "";
+            width: 35px;
+            height: 35px;
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            background: $yellow;
+            background-image:  url('./assets/premium.png');
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 2px 4px 1px #00000054;
+            border-radius: 50%;
+            @media screen and (max-width: 600px) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    &__activity-start-date {
+      color: $gray-600;
+      font-size: .7rem;
+      opacity: .8;
+    }
+    &--sm {
+        padding: map-get($spacers, 1) map-get($spacers, 2);
+        #{$rootHeader}__photo {
+            $dimension_photo: 80px;
+            width: $dimension_photo;
+            height: $dimension_photo;
+            min-width: $dimension_photo;
+            min-height: $dimension_photo;
+        }
+        #{$rootHeader}__title {
+            font-size: $h5-font-size;
+        }
+        #{$rootHeader}__price {
+            font-size: $h5-font-size;
+        }
+        #{$rootHeader}__actions,
+        #{$rootHeader}__activity-start-date {
+            display: none;
+        }
+    }
+}

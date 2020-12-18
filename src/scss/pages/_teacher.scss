@@ -1,0 +1,19 @@
+// .gig-create,
+// .gig-success,
+// .gig-edit,
+// .gig-premium,
+// .page-account,
+// .page-teacher-success,
+// .page-teacher-show {
+//   .router-view-content {
+//     @extend %punku-before-head;
+//   }
+// }
+.page-teacher-landing {
+  background-color: $white;
+  .router-view-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

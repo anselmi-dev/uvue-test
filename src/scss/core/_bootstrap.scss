@@ -1,0 +1,233 @@
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
+.nav-link {
+  padding: 0.8rem .5rem;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  font-weight: bold;
+  color: $primary;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+	border-bottom: 2px solid $primary;
+}
+.invalid-feedback.error {
+	display: block;
+}
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  padding-right: 0px;
+  background-size: 17px;
+  background-position: top left !important;
+}
+.form-group--required {
+    label {
+        &:after {
+            content: "*";
+            color: $red;
+        }
+    }
+}
+.input-group--password {
+  input {
+    padding-right: 40px;
+    border-top-right-radius: $input-border-radius !important;
+    border-bottom-right-radius: $input-border-radius !important;
+    &.is-invalid {
+      background: none !important;
+    }
+  }
+  .input-group-btn {
+    position: absolute;
+    // z-index: 0;
+    right: 0;
+      z-index: 3;
+        button {
+            &,
+            &:focus,
+            &:hover {
+                outline: none;
+                border: none;
+                box-shadow: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.btn-pill {
+  border-radius: 30px
+}
+.form-control {
+  box-shadow: $box-shadow;
+  outline: none;
+}
+
+.tooltip.b-tooltip .arrow {
+  display: none;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+    padding: 0.25rem 0.25rem;
+    font-size: $h9-font-size;
+    line-height: 1;
+    border-radius: 0.2rem;
+}
+
+.row--sm {
+  margin-right: -5px;
+  margin-left: -5px;
+  & > [class*="col"] {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.row--xs {
+  margin-right: -2px;
+  margin-left: -2px;
+  & > [class*="col"] {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+/**
+ * Actualizacion adicional de los badge
+ */
+@each $color, $value in $theme-colors {
+  .badge-#{$color}--shadow {
+    box-shadow: 1px 3px 1px darken($value, 25%);
+  }
+}
+
+
+
+.alert--app {
+  padding: 0;
+  display: flex;
+  .icon { padding: .5rem; font-size: 1.2rem }
+  .content {
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @each $color, $value in $theme-colors {
+    &.alert-#{$color} .icon {
+      background-color: darken($value, 10%);
+      color: #fff;
+    }
+    &.alert-#{$color} .content {
+      background-color: $value ;
+    }
+  }
+}
+
+.table--no-head {
+  thead {
+    display: none
+  }
+}
+
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  &:after {
+    border: none;
+    font-family: unicons;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin: auto;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-right: .25rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e82d';
+    transform: rotate(180deg);
+    transition: all .25s;
+  }
+  &[aria-expanded=true]:after {
+    transform: rotate(0deg);
+  }
+}
+
+.b-rating  {
+  height: auto;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  .b-rating-star, .b-rating-value {
+    padding: 0 0.15rem;
+  }
+}
+
+.account-tabs__pcount {
+  position: relative;
+  span {
+    position: absolute;
+    background-color: $primary;
+    padding: 0.25rem;
+    border-radius: 50%;
+    right: -15px;
+    top: -10px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    font-weight: 400 !important;
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+    font-size: 55%;
+  }
+}
+
+.nav-tabs--overflow .nav.nav-tabs {
+  overflow: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.miw-100 {
+  min-width: 100%;
+}
+.svg-white {
+fill: $white
+}
+.break-all {
+  word-break: break-all;
+}
+.break-spaces {
+  white-space: break-spaces;
+}
+.dropdown-toggle.btn-none::after {
+  content: none;
+}
+
+.-mx-1 {
+  margin-left: -.25rem;
+  margin-right: -.25rem;
+}
+
+.invert-img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}

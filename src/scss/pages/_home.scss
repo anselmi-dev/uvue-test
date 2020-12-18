@@ -1,0 +1,12 @@
+.page-home .parent-content {
+  background-color: $white;
+  .router-view-content {
+    padding-top: 0px
+  }
+  #hero-punku-search {
+    padding-left: 0;
+    padding-right: 0;
+    width: 500px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+label.switch {
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    display: flex;
+    input {
+        display: none;
+        &:checked {
+          + span {
+            &:before {
+                width: 200%;
+                height: 200%;
+                left: 0;
+                top: 0;
+                border-radius: 0;
+                background-color: $primary;
+            }
+            &:after {
+                width: 11px;
+                height: 11px;
+            }
+          }
+        }
+    }
+    span.switch--toggle {
+        overflow: hidden;
+        position: relative;
+        background-color: $gray-300;
+        width: 30px;
+        min-width: 30px;
+        height: 15px;
+        border-radius: 15px;
+        display: inline-block;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: $gray-600;
+            transition: all .5s;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 3px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 0px;
+            height: 0px;
+            border-radius: 50%;
+            background-color: white;
+            transition: all .5s;
+        }
+    }
+}

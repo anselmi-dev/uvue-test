@@ -1,0 +1,249 @@
+.zumbido {
+    -webkit-animation: tiembla .1s infinite;
+}
+@-webkit-keyframes tiembla{
+    0%  { -webkit-transform:translateX(-5deg); }
+    50% { -webkit-transform:translateX( 0deg); }
+    100%{ -webkit-transform:translateX( 5px); }
+}
+
+%punku-before-head {
+    margin-top: 30px;
+    &:before {
+        content: "";
+        background-image: url('./assets/images/account-bg.png');
+        background-size: cover;
+        background-color: #497a97;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 150px;
+        width: 100%;
+        z-index: -1;
+    }
+}
+.punku-box {
+  @extend %punku-box;
+}
+
+.punku-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	@media screen and (min-width: 1200px) {
+	    max-width: 1140px;
+	}
+}
+
+.punku-alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: $dark;
+    &--warning {
+    	background-color: #ffffeb;
+    	border-color: #ffffeb;
+    	margin-bottom: 0 !important;
+    }
+}
+
+.punku__title {
+    font-size: $h2-font-size;
+    font-weight: bold;
+    margin-bottom: map-get($spacers, 3);
+    display: block;
+    text-align: center;
+}
+.punku-bg--degraded {
+    background-color: lighten($primary, 15%);
+    position: relative;
+    &:before {
+        content: "";
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background: rgba(40,110,180,1);
+        background: -moz-linear-gradient(top, rgba(40,110,180,1) 0%, rgba(64,136,205,1) 32%, rgba(87,161,230,1) 63%, rgba(87,161,230,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(40,110,180,1)), color-stop(32%, rgba(64,136,205,1)), color-stop(63%, rgba(87,161,230,1)), color-stop(100%, rgba(87,161,230,1)));
+        background: -webkit-linear-gradient(top, rgba(40,110,180,1) 0%, rgba(64,136,205,1) 32%, rgba(87,161,230,1) 63%, rgba(87,161,230,1) 100%);
+        background: -o-linear-gradient(top, rgba(40,110,180,1) 0%, rgba(64,136,205,1) 32%, rgba(87,161,230,1) 63%, rgba(87,161,230,1) 100%);
+        background: -ms-linear-gradient(top, rgba(40,110,180,1) 0%, rgba(64,136,205,1) 32%, rgba(87,161,230,1) 63%, rgba(87,161,230,1) 100%);
+        background: linear-gradient(to bottom, rgba(40,110,180,1) 0%, rgba(64,136,205,1) 32%, rgba(87,161,230,1) 63%, rgba(87,161,230,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#286eb4', endColorstr='#57a1e6', GradientType=0 );
+    }
+}
+
+.punku-page-center {
+    background-color: $white;
+    .router-view-content {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      & > * {
+        width: 100%;
+        align-self: center;
+      }
+    }
+}
+
+
+.punku__field {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+    input {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+    label {
+        position: absolute;
+        font-size: .7rem;
+        top: 0;
+        left: 15px;
+    }
+}
+.punku__field-error {
+    font-size: .7rem;
+    color: $red;
+    width: 100%;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.punku-auth {
+    .vm--modal {
+        width: 700px !important;
+    }
+    &__title {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    &__container {
+        display: flex;
+        align-items: stretch;
+        & > * {
+            left: 0;
+            width: 50%;
+            z-index: 2;
+        }
+    }
+    &__content {
+        color: #FFFFFF;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &__overlay-panel {
+        background: $primary;
+        background: -webkit-linear-gradient(to right, $primary, #FF416C);
+        background: linear-gradient(to right, $primary, darken($primary, 20%));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #fff;
+        padding: 2rem;
+    }
+    &__social-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        &:hover {
+            text-decoration: none;
+            color: $primary;
+        }
+        i:before,
+        span:before,
+        span {
+            display: inherit;
+            line-height: 1;
+            font-size: 2rem;
+        }
+        &.twitter {
+            color: #00acee;
+            transition: .3s all;
+            &:active,
+            &:hover {
+                color: darken(#00acee, 10%);
+            }
+        }
+        &.facebook {
+            color: #3b5998;
+            transition: .3s all;
+            &:active,
+            &:hover {
+                color: darken(#3b5998, 10%);
+            }
+        }
+        &.google {
+            color: $google_plus;
+            &:active,
+            &:hover {
+                color: darken($google_plus, 10%);
+            }
+        }
+        &.linkedin {
+            color: #0e76a8;
+            transition: .3s all;
+            &:active,
+            &:hover {
+                color: darken(#0e76a8, 10%);
+            }
+        }
+    }
+    &__form {
+        background-color: #FFFFFF;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2.5rem 2rem;
+        position: relative;
+        width: 100%;
+        &--transparent {
+            background-color: transparent;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__container > * {
+            width: 100%;
+        }
+        &__overlay-panel {
+            display: none !important;
+        }
+        .vm--modal {
+            width: 450px !important;
+        }
+    }
+}
+
+
+.textarea-autosize-count {
+    position: relative;
+    small {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        color: $gray-600;
+    }
+}

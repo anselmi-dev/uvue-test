@@ -1,0 +1,237 @@
+.punku-tacher-card {
+	padding: map-get($spacers, 2);
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0px 2px 5px 2px #dee2e6;
+	border-radius: map-get($spacers, 1);
+	margin-bottom: map-get($spacers, 4);
+	@extend %box-shadow-1;
+    color: initial;
+    text-decoration: none;
+    background-color: $white;
+    word-break: break-word !important;
+	&:visited,
+    &:focus,
+    &:hover {
+        color: initial;
+        text-decoration: none;
+		box-shadow: 0px 4px 5px 2px #dee2e6;
+	}
+	&__blockr {
+        // margin-top: map-get($spacers, 1);
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
+		position: relative;
+		width: 100%;
+		padding: map-get($spacers, 2);
+	}
+	&__blockl {
+        width: 100%;
+		// display: flex;
+	}
+    &__bio {
+        min-height: 77px;
+        span {
+            word-break: break-word !important;
+            letter-spacing: -0.5px;
+        }
+    }
+	&__avatar {
+        width: 100%;
+        padding-bottom: 100%;
+		border-radius: 4px;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: map-get($spacers, 2);
+		background: $gray-300;
+        position: relative;
+        background-image: url(https://www.superprof.es/imagenes/anuncios/profesor-home-fisioterapeuta-especializada-reeducacion-postural-clases-personalizadas-hatha-yoga-yin-yoga.jpg);
+        background-position: center;
+        background-size: cover;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to bottom, transparent, #4e4460);
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: 0;
+        }
+        &-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            text-align: left;
+            padding: map-get($spacers, 2) map-get($spacers, 3);
+        }
+	}
+	&__detail,
+	&__information {
+		padding:  0 map-get($spacers, 1);
+		width: 100%;
+        display: flex;
+        justify-content: space-between;
+	}
+    &__information {
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: map-get($spacers, 2);
+    }
+    &__detail {
+		display: block;
+		span {
+			// color: $dark;
+			font-size: $h7-font-size;
+		}
+		label {
+			color: $gray-600;
+			font-size: $h7-font-size;
+			margin-bottom: map-get($spacers, 2)
+		}
+	}
+	&__profession {
+        margin-bottom: map-get($spacers, 1);
+        margin-top: map-get($spacers, 1);
+		span {
+			color: $dark;
+			font-size: $h7-font-size;
+            .vue-star-rating-star {
+                line-height: 1;
+            }
+		}
+		label {
+            width: 100%;
+			color: $gray-600;
+			font-size: $h7-font-size;
+            text-align: left;
+			margin-bottom: 0;
+            line-height: 1;
+            display: block;
+            background-color: $gray-300;
+            border-radius: 4px;
+            padding: map-get($spacers, 1);
+		}
+    }
+    &__rating {
+		margin-bottom: map-get($spacers, 1);
+		// margin-top: map-get($spacers, 2);
+        svg polygon {
+            stroke: none !important;
+        }
+	}
+	&__count-class {
+		font-size: $h6-font-size;
+        color: $white;
+        text-align: right;
+        margin-bottom: map-get($spacers, 1);
+        margin-top: map-get($spacers, 1);
+        @media screen and (max-width: 500px) {
+            margin-top: map-get($spacers, 0);
+            font-size: $h9-font-size;
+        }
+	}
+	&__reservar {
+		text-transform: uppercase;
+		font-size: $h8-font-size;
+		color: $white;
+		background: $primary;
+		border: none;
+		box-shadow: none;
+		outline: none;
+		border-radius: 2px;
+		&:hover {
+			background: darken($primary, 10%);
+		}
+	}
+	&__premiun {
+        background-color: $white;
+        @extend %box-shadow-1;
+        width: 200px;
+        height: 40px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        right: -80px;
+        span {
+            position: absolute;
+            top: 6px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            background-color: #ffd055;
+            background-image: url('./assets/premium.png');
+            background-size: cover;
+            border-radius: 20px;
+            display: block;
+        }
+    }
+	&__occupation {
+		color: $gray-500;
+		font-size: $h8-font-size;
+	}
+    &__baged {
+        span {
+            padding: 5px;
+            font-size: $h10-font-size;
+            border-radius: 3px;
+            color: $white;
+            background: $primary;
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+        }
+    }
+	&__name {
+		font-size: $h4-font-size;
+        position: relative;
+        color: $white;
+        z-index: 2;
+        line-height: 1;
+        @media screen and (max-width: 500px) {
+            font-size: $h6-font-size;
+        }
+	}
+	&__instruct,
+	&__pricehour {
+        // text-align: right;
+		// margin-top: map-get($spacers, 1);
+        font-weight: 600;
+		label,
+		span {
+            color: $red;
+            white-space: pre;
+			display: block;
+			margin-bottom: 0px;
+			font-size: $h5-font-size;
+            line-height: $h5-font-size;
+            letter-spacing: -0.8px;
+		}
+		label { line-height: 1; }
+	}
+	&__instruct {
+        margin-top: map-get($spacers, 2);
+		span {
+		    background: $secondary;
+		    display: inline-block;
+		    border-radius: 2px;
+		    padding: 0px 10px;
+		    color: $white;
+		    margin-right: .5rem;
+		    font-size: $h8-font-size;
+		}
+	}
+
+    &__off {
+        background-color: $red !important;
+        color: $white;
+    }
+}
